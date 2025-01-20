@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+.font-quicksand {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* SHARED STYLES */
+
+.display-flex {
+    display: flex;
+}
+
+.btn-primary {
+    color: white;
+    border-radius: 0.7rem;
+    background-color: orange;
+    font-size: 1rem;
+    padding: 10px 40px 10px 40px;
+    border: none;
+}
+
+.color-font-common {
+    font-weight: normal;
+    color: #808080;
+}
+
+
+/* HEADER */
+
+header {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.nav-container{
+    justify-content: space-around;
+    padding: 1rem 0rem;
+    align-items: center;
+    height: 3.2rem;
+}
+.bag-school{
+    gap: 0.7rem;
+}
+.nav-title{
+    font-size: 1.2rem;
+}
+.nav-list-item{
+    list-style: none;
+    padding-right: 2rem;
+} 
+
+.nav-list-item-1{
+    color: orange;
+}
+.nav-list-item-2{
+    color: rgb(245, 6, 6);
+}
+.nav-list-item-3{
+    color: #1fed03;
+}
+.nav-list-item-4{
+    color: #5D58EF;
+}
+
+
+
+
+
+/* MAIN */
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+
+/* Media Query for Mobile Device*/
+@media screen and (max-width:576px){
+    
+    
+}
