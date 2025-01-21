@@ -90,7 +90,7 @@ body {
     align-items: center;
     gap: 3rem;
     margin-bottom: 1rem;
-    
+
 }
 
 .banner-title {
@@ -126,20 +126,64 @@ body {
 
 
 /* MAIN */
+/* main {
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    border: #5D58EF 2px solid;
+} */
+ 
 main {
     background-image: url('../assets/bg.png');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    /* background-repeat: no-repeat;  */
+    background-repeat: no-repeat;
     min-height: 100vh;
-    border: #5D58EF 2px solid;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    /* background-attachment: fixed; */
 }
 
+/* main {
+    position: relative;
+    background: url('../assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+main::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(to top, rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0));
+    z-index: 2;
+    pointer-events: none;
+}
+
+.overall-margin {
+    position: relative;
+    z-index: 1;
+} */
+
+
 /* Carriculam */
-.carriculam-card{
+.carriculam-card {
     gap: 1.8rem;
 }
-.curriculam-title{
+
+.curriculam-title {
     display: flex;
     justify-content: center;
     margin-top: 3.8rem;
@@ -151,37 +195,99 @@ main {
     background: linear-gradient(to bottom, rgb(207, 235, 247), white);
     border-radius: 1rem;
     padding: 1rem;
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.1); 
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
 }
+
 .car-items-2 {
     text-align: center;
     background: linear-gradient(to bottom, rgb(236, 250, 185), white);
     border-radius: 1rem;
     padding: 1rem;
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.1); 
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
 }
+
 .car-items-3 {
     text-align: center;
     background: linear-gradient(to bottom, rgb(244, 171, 200), white);
     border-radius: 1rem;
     padding: 1rem;
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.1); 
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
 }
-.car-item{
-    
-}
-.car-des{
 
-}
-.car-read-more-1{
+.car-item {}
+
+.car-des {}
+
+.car-read-more-1 {
     color: skyblue;
 }
-.car-read-more-2{
+
+.car-read-more-2 {
     color: orange;
 }
-.car-read-more-3{
+
+.car-read-more-3 {
     color: blueviolet;
 }
+
+.main-sec-1{
+    margin-bottom: 5rem;
+}
+/* section-2 */
+/* .main-sec-2{
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    border: 2px black solid;
+    background: linear-gradient(to bottom, rgba(237, 146, 146), green);
+} */
+
+/* .main-sec-2{
+    width: 1050px;
+    margin: 0 auto;
+} */
+.big-container {
+    text-align: center;
+    background: white);
+    border-radius: 1rem;
+    /* padding: 1rem; */
+    box-shadow: 0px 3px 5px rgba(76, 3, 3, 0.1);
+}
+.grid-items{
+    text-align: left;
+    background: white);
+    border-radius: 1rem;
+    /* padding: 1rem; */
+    box-shadow: 0px 3px 5px rgba(76, 3, 3, 0.1);
+}
+    
+
+.flex-grid-con {
+    gap: 1rem;
+}
+.grid-con{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+}
+.big-con-img, .grid-con-img{
+    margin: 0px;
+    padding: 0px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 100%;
+}
+
+.big-con-title, .big-con-des, .grid-con-title {
+    padding-left: 1.5rem;
+    padding: 1rem;
+}
+
+
+
+
 
 
 /* FOOTER */
@@ -191,7 +297,7 @@ main {
 /* Media Query for Mobile Device*/
 @media screen and (max-width: 576px) {
     .nav-container {
-        display: none; 
+        display: none;
     }
 
     .nav-mobile {
@@ -204,20 +310,48 @@ main {
         justify-content: space-around;
     }
 
-    .horizontal-line hr{
+    .horizontal-line hr {
         border: none;
         height: 1px;
         background-color: orange;
     }
-    
+
     .banner {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
     }
 
-    .banner-content{
+    .banner-content {
         text-align: center;
     }
+
+
+    .carriculam-card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+
+    .car-items-1, .car-items-2, .car-items-3{
+        padding: 7rem;
+    }
+
+    /* main {
+        background-attachment: scroll;
+    } */
+
+    
+
+
+    /* main { */
+        /* background-image: none; */
+        /* background-size:100%; */
+        /* background-position: center; */
+        /* background-repeat: no-repeat;  */
+        /* min-height: 100vh; */
+        /* border: #5D58EF 2px solid; */
+    /* } */
 
 }
