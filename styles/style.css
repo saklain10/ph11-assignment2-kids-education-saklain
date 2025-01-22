@@ -386,7 +386,7 @@ footer{
 .footer-sub{
     padding-top: 5rem;
     padding-bottom: 6rem;
-    gap: 6rem;
+    gap: 4rem;
 }
 .bag-kids{
     gap: 1rem;
@@ -411,6 +411,11 @@ footer{
 
 /* Media Query for Mobile Device*/
 @media screen and (max-width: 576px) {
+    .bg {
+        background: url('../assets/bg.png'); /* Only the image will be shown */
+        background-size: cover; /* Ensure the image fits properly */
+        background-position: center; /* Center the image */
+    }
     
     .nav-container {
         display: none;
@@ -423,7 +428,9 @@ footer{
 
     .n-m {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 
     .horizontal-line hr {
@@ -455,6 +462,8 @@ footer{
     .car-items-2,
     .car-items-3 {
         padding: 7rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Main shadow */
+                0 6px 20px rgba(0, 0, 0, 0.1); /* Additional softer shadow */
     }
 
     .big-container{
@@ -464,6 +473,11 @@ footer{
         width: 96%;
         text-align: center;
         border-right: 3rem;
+        
+    }
+    .grid-items{
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Main shadow */
+                0 6px 20px rgba(0, 0, 0, 0.1);
     }
     .circle-arrow{
         display: none;
