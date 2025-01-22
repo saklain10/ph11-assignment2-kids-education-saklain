@@ -2,7 +2,7 @@
 
 .font-quicksand {
     font-family: "Poppins", serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -193,6 +193,8 @@ main::after {
     justify-content: center;
     margin-top: 3.8rem;
     margin-bottom: 3.8rem;
+    font-size: 2.8rem;
+
 }
 
 .car-items-1 {
@@ -335,9 +337,13 @@ main::after {
     margin-top: 3.8rem;
     margin-bottom: 3.8rem;
 }
+
+/* main2 */
 .circle-arrow{
     display: flex;
     gap: 0.7rem;
+    padding-top: -4rem;
+    padding-bottom: 0rem;
 }
 
 .circle-right, .circle-left{
@@ -356,22 +362,51 @@ main::after {
 .stories-button, .circle-arrow{
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-top: 1.5rem;
 }
-/* main2 */
+.circle-arrow{
+    margin-bottom: -3rem;
+}
 .headline{
     font-size: 1.4rem;
-    border: green 2px solid;
-    background-color: aquamarine;
-    margin-top: 1rem;
+    background-color: #48db04;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+    0 6px 20px rgba(0, 0, 0, 0.2); ;
+    color: white;
+    font-weight: 400;
 }
-
-
-
 
 /* FOOTER */
 
+footer{
+    color: white;
+    background-color: #01ACFD;
+}
+.footer-sub{
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    gap: 6rem;
+}
+.bag-kids{
+    gap: 1rem;
+    align-items: center;
+}
+.f-soc{
+    gap: 0.5rem;
+}
+.f-con-des{
+    width: 77%;
+}
+.about-school{
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+    padding-bottom: 0px;
+}
+
+.f-content{
+    background-color: #01ACFD;
+}
 
 
 /* Media Query for Mobile Device*/
@@ -431,6 +466,21 @@ main::after {
         border-right: 3rem;
     }
     .circle-arrow{
+        display: none;
+    }
+    .footer-sub{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 2rem;
+        background-color: #01ACFD
+    }
+    footer{
+        margin-left: ;
+    }
+    .f-con-des{
+        width: 50%;
+    }
+    .headline{
         display: none;
     }
 
