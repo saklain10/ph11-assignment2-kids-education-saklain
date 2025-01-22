@@ -135,7 +135,7 @@ body {
     border: #5D58EF 2px solid;
 } */
 
-main {
+.bg {
     /* background-image: url('../assets/bg.png'); */
     background-size: cover;
     background-position: center;
@@ -359,7 +359,13 @@ main::after {
     margin-top: 4rem;
     margin-bottom: 3rem;
 }
-
+/* main2 */
+.headline{
+    font-size: 1.4rem;
+    border: green 2px solid;
+    background-color: aquamarine;
+    margin-top: 1rem;
+}
 
 
 
@@ -370,6 +376,7 @@ main::after {
 
 /* Media Query for Mobile Device*/
 @media screen and (max-width: 576px) {
+    
     .nav-container {
         display: none;
     }
@@ -407,6 +414,7 @@ main::after {
         margin-left: 15rem;
         margin-right: 15rem;
     }
+    
 
     .car-items-1,
     .car-items-2,
@@ -422,6 +430,11 @@ main::after {
         text-align: center;
         border-right: 3rem;
     }
+    .circle-arrow{
+        display: none;
+    }
+
+    
 
     /* main {
         background-attachment: scroll;
